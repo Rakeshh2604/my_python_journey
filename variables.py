@@ -19,3 +19,21 @@ x=y=z='orange'
 print(x)
 print(y)
 print(z)
+# or instead of writing three print statements we can combine and print all the three variables in a single print statemnt by ,
+print(x,y,z)
+# if we want to combine two or more variables into a single print statement then we use + symbol
+one='hello '
+two='world '
+print(one+two)
+
+# GLOBAL VARIABLE: a variable that is defined outside the function and can either be used inside or outside the function. 
+A='awesome'
+def fun():
+    print('python is' ,A)
+fun()
+
+def func(): # creating a global variable inside a function and can be accesed outside the function too
+    global X
+    X='Hello'
+func()
+print(X)
